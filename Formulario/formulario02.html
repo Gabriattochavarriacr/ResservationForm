@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="description" content="Formulario del Cliente" />
+  <title>Hotel La Hormiga de Oro</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <form onsubmit="validarFormulario(event)">
+    <h2>Hotel la Hormiga de Oro</h2>
+    <h3>Contáctanos</h3>
+    <legend>Fecha de Entrada</legend>
+    <input type="date" name="FechaEntrada" value="2023-09-01" min="2023-06-01" max="2024-12-31" /><br /><br />
+    <legend>Fecha de Salida</legend>
+    <input type="date" name="FechaSalida" value="2023-09-01" min="2023-09-01" max="2024-12-31" /><br /><br />
+
+    <legend>Datos Personales</legend>
+    <input type="text" name="Nombre" placeholder="Nombre" />
+    <input type="text" name="Apellido" placeholder="Apellido" /><br /><br />
+    <input type="text" name="Correo" placeholder="Correo Electrónico" />
+
+    <input type="text" name="Teléfono" placeholder="Teléfono" /><br /><br />
+
+    <legend>Tipo de Habitación</legend>
+
+    <label for="sencilla">Sencilla</label>
+    <input type="radio" name="opción" value="Sencilla" id="sencilla" />
+
+    <label for="doble">Doble</label>
+
+    <input type="radio" name="opción" value="Doble" id="doble" />
+
+    <label for="villa">Villa familiar</label>
+
+    <input type="radio" name="opción" value="Villa" id="villa" /><br /><br />
+    <fieldset>
+
+      <legend>Acompañante niño menor de 5 años</legend>
+
+      <label>
+        <input type="radio" name="opción" value="Sí" /> Si
+      </label>
+
+      <label>
+        <input type="radio" name="opción" value="No" /> No
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Viene con mascotas</legend>
+      <label>
+        <input type="radio" name="opción" value="Sí" /> Si
+      </label>
+      <label>
+        <input type="radio" name="opción" value="No" /> No
+      </label>
+    </fieldset> <br />
+
+    <form action="#" autocomplete="off">
+      <textarea name="mensaje" placeholder="Ingresa tú mensaje"></textarea></br>
+      <input type="submit" value="Enviar" id="boton" />
+
+    </form>
+</body>
+
+</html>
